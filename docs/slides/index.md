@@ -71,3 +71,43 @@ HTTP GET /dashboard
 HTTP GET /products
 ```
 ## <i class="fa fa-table"></i> <i class="fa fa-arrow-left"></i> <i class="fa fa-cog"></i> <i class="fa fa-arrow-left"></i> <i class="fa fa-server"></i>
+
+
+
+# <i class="fa fa-calendar-o"></i> Today
+## <i class="devicon-angularjs-plain"></i><i class="devicon-react-original"></i><i class="devicon-backbonejs-plain"></i><i class="devicon-vuejs-plain"></i>
+
+
+
+# <i class="devicon-react-original" style="font-size:5em;"></i>
+
+
+## [create-react-app](https://github.com/facebookincubator/create-react-app)
+```bash
+create-react-app [name]
+```
+
+
+## Start vs Build
+
+
+## Components
+
+
+## State
+
+
+## Props
+
+
+## Lifecycle
+
+
+## Routing
+
+
+## Data
+
+
+
+# <i class="fa fa-comments-o" style="font-size:5em;"></i>
