@@ -89,9 +89,26 @@ create-react-app [name]
 
 
 ## Start vs Build
+```bash
+# start server (dev)
+npm start 
+# serve your own (prod)
+npm run build
+```
 
 
 ## Components
+```js
+import React, { Component } from 'react';
+
+export default class ButtonComponent extends Component {
+    render() {
+        return (
+            <button>Click</button>
+        )
+    }
+}
+```
 
 
 ## State
