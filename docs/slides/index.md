@@ -170,7 +170,7 @@ componentDidUpdate()
 
 
 ## Routing
-```shell
+```bash
 npm install -S react-router react-router-dom
 ```  
 ```js
@@ -191,6 +191,17 @@ import { BrowserRouter, Link, Route } from 'react-router-dom';
 
 
 ## Data
+```bash
+npm install -S axios
+```  
+```js
+import axios from 'axios';
+
+axios.get(`https://swapi.co/api/people/${next}`).then(res => {
+    const data = res.data;
+    this.setState({ person: data });
+});
+```
 
 
 
