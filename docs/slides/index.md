@@ -170,6 +170,24 @@ componentDidUpdate()
 
 
 ## Routing
+```shell
+npm install -S react-router react-router-dom
+```  
+```js
+import { BrowserRouter, Link, Route } from 'react-router-dom';
+<BrowserRouter>
+    <div className="App">
+        <!--...-->
+        <Link to="/">Dashboard  </Link>
+        <Link to="/mount">mount  </Link>
+        <Link to="/update">update</Link>
+        <!--...-->
+        <Route exact path="/" component={MyButtonPage}></Route>
+        <Route path="/mount" component={MountButtonPage}></Route>
+        <Route path="/update" render={() => (<UpdateButtonPage time={this.state.time} />)} ></Route>
+    </div>
+</BrowserRouter>
+```
 
 
 ## Data
