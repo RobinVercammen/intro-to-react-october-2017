@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+    <title>Index</title>
+</head>
+
+<body>
+    <a href="/">Index</a>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/products">Products</a>
+    <h1>Index</h1>
+    <p class="router-outlet"></p>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+<script>
+    var setTitle = function (title) {
+        $('h1').text(title);
+        document.title = title;
+    };
+    var setData = function (data) {
+        $('.router-outlet').text(data ? JSON.stringify(data) : '');
+    }
+    $(function () {
+        $('a[href="/"]').click(function (ev) {
+            ev.preventDefault();
+            setTitle('Index');
+            setData();
+        })
+        $('a[href="/dashboard"]').click(function (ev) {
+            ev.preventDefault();
+            setTitle('Dashboard');
+            $.getJSON('/dashboard.json', setData);
+        })
+        $('a[href="/products"]').click(function (ev) {
+            ev.preventDefault();
+            setTitle('Products');
+            $.getJSON('/products.json', setData);
+        })
+    });
+</script>
+
+</html>
