@@ -11,7 +11,7 @@ export default class ButtonComponent extends Component {
     }
     render() {
         return (
-            <button onClick={this.onClick}>Click {this.state.clickCount}</button>
+            <button onClick={this.onClick}>{this.props.title} {this.state.clickCount}</button>
         )
     }
 }
