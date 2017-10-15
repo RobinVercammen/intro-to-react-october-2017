@@ -135,9 +135,38 @@ export default class ButtonComponent extends Component {
 
 
 ## Props
+```js
+import React, { Component } from 'react';
+
+export default class ButtonComponent extends Component {
+    // ...
+    render() {
+        return (
+            <button onClick={this.onClick}>Click {this.state.clickCount}</button>
+        )
+    }
+}
+```  
+```html
+    <MyButton title="Click Me Title"></MyButton>
+```
 
 
 ## Lifecycle
+```js
+// Mount
+constructor()
+componentWillMount()
+render()
+componentDidMount()
+
+// Update
+componentWillReceiveProps()
+shouldComponentUpdate()
+componentWillUpdate()
+render()
+componentDidUpdate()
+```
 
 
 ## Routing
